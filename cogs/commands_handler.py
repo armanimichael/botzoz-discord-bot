@@ -31,7 +31,7 @@ class CommandsHandler(commands.Cog):
             await user.move_to(rnd_channel)
 
     @commands.command()
-    @commands.has_permissions(administrator=False)
+    @commands.has_permissions(administrator=True)
     @commands.guild_only()
     async def merge(self, ctx):
         'Merges every voice channel user into the author channel'
